@@ -1,5 +1,4 @@
-﻿
-using Microsoft.ML;
+﻿using Microsoft.ML;
 using Microsoft.ML.Data;
 using System.Data;
 
@@ -26,10 +25,8 @@ class Program
     static void Main(string[] args)
     {
         // Caminho para o arquivo CSV com os dados
-       
         string diretorioProjeto = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
         string dataPath = Path.Combine(diretorioProjeto, "Data", "mega_sena.csv");
-
 
         MLContext mlContext = new();
 
@@ -49,7 +46,9 @@ class Program
 
         // Avaliar o modelo
         var metrics = mlContext.Regression.Evaluate(model.Transform(trainTestSplit.TestSet));
-        Console.WriteLine($"Mean Absolute Error: {metrics.MeanAbsoluteError}");
+        
+        // Avaliar o resultado e definir ações
+        AvaliarResultado((float)metrics.MeanAbsoluteError);
 
         // Prever os números mais prováveis
         var allData = mlContext.Data.CreateEnumerable<MegaSenaEntry>(dataView, reuseRowObject: false).ToList();
@@ -76,5 +75,30 @@ class Program
         // Restaurar a cor original do texto
         Console.ResetColor();
     }
-}
 
+    static void AvaliarResultado(float meanAbsoluteError)
+    {
+        // Definir limiares para bom, médio e ruim resultado        
+        string resultado = meanAbsoluteError switch
+        {
+            < 5.0f => "Bom",
+            < 10.0f => "Médio",
+            _ => "Ruim"
+        };
+
+        Console.WriteLine($"Mean Absolute Error: {meanAbsoluteError}");
+        Console.ForegroundColor = ConsoleColor.Blue;
+        Console.WriteLine($"Resultado da avaliação do modelo: {resultado}");
+        Console.ResetColor();
+
+        // Informar o que deve ser feito se o resultado for "Médio" ou "Ruim"
+        if (resultado is "Médio" or "Ruim")
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(resultado == "Médio"
+                ? "O resultado é médio. Considere ajustar os parâmetros do modelo ou utilizar mais dados de treino."
+                : "O resultado é ruim. É recomendável revisar o pipeline de treinamento, ajustar os parâmetros do modelo ou utilizar um conjunto de dados maior e mais diversificado.");
+            Console.ResetColor();
+        }
+    }
+}

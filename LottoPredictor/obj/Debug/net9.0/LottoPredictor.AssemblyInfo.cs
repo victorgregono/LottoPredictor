@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LottoPredictor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+069c73eb52cf0646fe2b04b44b9af4439fe4bf10")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0942fe7ca4e171f8679c309a79d3fdd6dbef88c0")]
 [assembly: System.Reflection.AssemblyProductAttribute("LottoPredictor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LottoPredictor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
