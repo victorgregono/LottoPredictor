@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{CF4FE3D6-6C6A-435A-B32D-D2E4B1C5A53F}|LottoPredictor\\LottoPredictor.csproj|c:\\projetos\\lottopredictor\\lottopredictor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF4FE3D6-6C6A-435A-B32D-D2E4B1C5A53F}|LottoPredictor\\LottoPredictor.csproj|solutionrelative:lottopredictor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF4FE3D6-6C6A-435A-B32D-D2E4B1C5A53F}|LottoPredictor\\LottoPredictor.csproj|c:\\projetos\\lottopredictor\\lottopredictor\\data\\mega_sena.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{CF4FE3D6-6C6A-435A-B32D-D2E4B1C5A53F}|LottoPredictor\\LottoPredictor.csproj|solutionrelative:lottopredictor\\data\\mega_sena.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,11 +18,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "mega_sena.csv",
+              "DocumentMoniker": "C:\\Projetos\\LottoPredictor\\LottoPredictor\\Data\\mega_sena.csv",
+              "RelativeDocumentMoniker": "LottoPredictor\\Data\\mega_sena.csv",
+              "ToolTip": "C:\\Projetos\\LottoPredictor\\LottoPredictor\\Data\\mega_sena.csv",
+              "RelativeToolTip": "LottoPredictor\\Data\\mega_sena.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2025-01-15T13:58:10.054Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -28,7 +45,7 @@
               "RelativeDocumentMoniker": "LottoPredictor\\Program.cs",
               "ToolTip": "C:\\Projetos\\LottoPredictor\\LottoPredictor\\Program.cs",
               "RelativeToolTip": "LottoPredictor\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-13T22:05:37.001Z",
               "EditorCaption": ""
